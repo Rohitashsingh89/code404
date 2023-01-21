@@ -6,6 +6,6 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/about')
-def about():
-    return 'About'
+@app.route('/post')
+def post():
+    return render_template('post.html')
